@@ -1,3 +1,9 @@
+<?php
+
+// require_once "../controllers/ZoomOAuth.php";
+$this->load->helper('zoom_oauth');
+$url = "https://zoom.us/oauth/authorize?response_type=code&client_id=".CLIENT_ID."&redirect_uri=".REDIRECT_URI;
+?>
 <!-- Topbar Start -->
 <div class="navbar-custom topnav-navbar topnav-navbar-dark">
     <div class="container-fluid">
@@ -153,6 +159,8 @@
 </a>
 <div class="visit_website">
     <h4 style="color: #fff; float: left;" class="d-none d-md-inline-block"> <?php echo $this->db->get_where('settings' , array('key'=>'system_name'))->row()->value; ?></h4>
+    <a href="<?php echo site_url('home'); ?>" target="" class="btn btn-outline-light ml-3 d-none d-md-inline-block"><?php echo get_phrase('visit_website'); ?></a>
+    <a href="<?php echo $url; ?>">Login with Zoom</a>
     <a href="<?php echo site_url('home'); ?>" target="" class="btn btn-outline-light ml-3 d-none d-md-inline-block"><?php echo get_phrase('visit_website'); ?></a>
 </div>
 </div>
