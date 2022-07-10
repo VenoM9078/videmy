@@ -89,7 +89,8 @@ class Install extends CI_Controller {
       $password = $this->input->post('password');
       $dbname   = $this->input->post('dbname');
       // check db connection using the above credentials
-      $db_connection = $this->check_database_connection($hostname, $username, $password, $dbname);
+      // dd("here");
+      $db_connection = $this->check_database_connection("localhost", "root", "", "academy");
       if ($db_connection == 'failed') {
         redirect(site_url('install/step3/error_con_fail'), 'refresh');
       } else if ($db_connection == 'db_not_exist') {
