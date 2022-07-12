@@ -348,7 +348,7 @@ abstract class REST_Controller extends CI_Controller {
      * Note: Only the widely used HTTP status codes are used
      *
      * @var array
-     * @link http://www.restapitutorial.com/httpstatuscodes.html
+     * @link https://www.restapitutorial.com/httpstatuscodes.html
      */
     protected $http_status_codes = [
         self::HTTP_OK => 'OK',
@@ -970,7 +970,7 @@ abstract class REST_Controller extends CI_Controller {
         $pattern = '/\.('.implode('|', array_keys($this->_supported_formats)).')($|\/)/';
         $matches = [];
 
-        // Check if a file extension is used e.g. http://example.com/api/index.json?param1=param2
+        // Check if a file extension is used e.g. https://example.com/api/index.json?param1=param2
         if (preg_match($pattern, $this->uri->uri_string(), $matches))
         {
             return $matches[1];
@@ -2188,12 +2188,12 @@ abstract class REST_Controller extends CI_Controller {
         $rest_realm = $this->config->item('rest_realm');
         if ($rest_auth === 'basic')
         {
-            // See http://tools.ietf.org/html/rfc2617#page-5
+            // See https://tools.ietf.org/html/rfc2617#page-5
             header('WWW-Authenticate: Basic realm="'.$rest_realm.'"');
         }
         elseif ($rest_auth === 'digest')
         {
-            // See http://tools.ietf.org/html/rfc2617#page-18
+            // See https://tools.ietf.org/html/rfc2617#page-18
             header(
                 'WWW-Authenticate: Digest realm="'.$rest_realm
                 .'", qop="auth", nonce="'.$nonce

@@ -29,8 +29,8 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (https://bcit.ca/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
  * @filesource
@@ -146,13 +146,13 @@ if ( ! function_exists('reduce_double_slashes'))
 	 * Reduce Double Slashes
 	 *
 	 * Converts double slashes in a string to a single slash,
-	 * except those found in http://
+	 * except those found in https://
 	 *
-	 * http://www.some-site.com//index.php
+	 * https://www.some-site.com//index.php
 	 *
 	 * becomes:
 	 *
-	 * http://www.some-site.com/index.php
+	 * https://www.some-site.com/index.php
 	 *
 	 * @param	string
 	 * @return	string

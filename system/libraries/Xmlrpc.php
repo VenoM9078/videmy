@@ -29,8 +29,8 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (https://bcit.ca/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
  * @filesource
@@ -354,7 +354,7 @@ class CI_Xmlrpc {
 	{
 		if (stripos($url, 'http') !== 0)
 		{
-			$url = 'http://'.$url;
+			$url = 'https://'.$url;
 		}
 
 		$parts = parse_url($url);
@@ -657,7 +657,7 @@ class XML_RPC_Client extends CI_Xmlrpc
 	{
 		parent::__construct();
 
-		$url = parse_url('http://'.$server);
+		$url = parse_url('https://'.$server);
 
 		if (isset($url['user'], $url['pass']))
 		{
@@ -743,7 +743,7 @@ class XML_RPC_Client extends CI_Xmlrpc
 			{
 				break;
 			}
-			// See https://bugs.php.net/bug.php?id=39598 and http://php.net/manual/en/function.fwrite.php#96951
+			// See https://bugs.php.net/bug.php?id=39598 and https://php.net/manual/en/function.fwrite.php#96951
 			elseif ($result === 0)
 			{
 				if ($timestamp === 0)

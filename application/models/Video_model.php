@@ -98,8 +98,8 @@ class Video_model extends CI_Model {
 				'description'       => str_replace(array("", "<br/>", "<br />"), NULL, $hash->items[0]->snippet->description),
 				'description_nl2br' => str_replace(array("\n", "\r", "\r\n", "\n\r"), NULL, nl2br($hash->items[0]->snippet->description)),
 				'thumbnail'         => 'https://i.ytimg.com/vi/'.$hash->items[0]->id.'/default.jpg',
-				'video'             => "http://www.youtube.com/watch?v=" . $hash->items[0]->id,
-				'embed_video'       => "http://www.youtube.com/embed/" . $hash->items[0]->id,
+				'video'             => "https://www.youtube.com/watch?v=" . $hash->items[0]->id,
+				'embed_video'       => "https://www.youtube.com/embed/" . $hash->items[0]->id,
 				'duration'       	=> $duration->format('%H:%I:%S'),
 			);
 		}

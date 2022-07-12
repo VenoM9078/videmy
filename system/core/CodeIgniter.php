@@ -29,8 +29,8 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (https://bcit.ca/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
  * @filesource
@@ -169,6 +169,13 @@ if ( ! is_php('5.4'))
 	{
 		if ($composer_autoload === TRUE)
 		{
+			if (file_exists(APPPATH.'vendor/autoload.php')) {
+
+				var_dump("yesssssssss");
+			} else {
+
+				var_dump(APPPATH,"NOOOOOOOOOOOOOO");
+			}
 			file_exists(APPPATH.'vendor/autoload.php')
 				? require_once(APPPATH.'vendor/autoload.php')
 				: log_message('error', '$config[\'composer_autoload\'] is set to TRUE but '.APPPATH.'vendor/autoload.php was not found.');

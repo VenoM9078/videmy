@@ -6,8 +6,8 @@ if (!defined('BASEPATH'))
  *  @author   : Creativeitem
  *  date    : 7 October, 2018
  *  Academy
- *  http://codecanyon.net/user/Creativeitem
- *  http://support.creativeitem.com
+ *  https://codecanyon.net/user/Creativeitem
+ *  https://support.creativeitem.com
  */
 
 class Updater extends CI_Controller

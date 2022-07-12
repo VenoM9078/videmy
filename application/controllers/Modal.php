@@ -3,8 +3,8 @@
  *  @author   : Creativeitem
  *  date    : 14 september, 2017
  *  Ekattor School Management System Pro
- *  http://codecanyon.net/user/Creativeitem
- *  http://support.creativeitem.com
+ *  https://codecanyon.net/user/Creativeitem
+ *  https://support.creativeitem.com
  */
 class Modal extends CI_Controller {
 

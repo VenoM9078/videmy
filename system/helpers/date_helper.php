@@ -29,8 +29,8 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (https://bcit.ca/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
  * @filesource
@@ -134,7 +134,7 @@ if ( ! function_exists('standard_date'))
 	 *
 	 * @todo	Remove in version 3.1+.
 	 * @deprecated	3.0.0	Use PHP's native date() instead.
-	 * @link	http://www.php.net/manual/en/class.datetime.php#datetime.constants.types
+	 * @link	https://www.php.net/manual/en/class.datetime.php#datetime.constants.types
 	 *
 	 * @example	date(DATE_RFC822, now()); // default
 	 * @example	date(DATE_W3C, $time); // a different format and time

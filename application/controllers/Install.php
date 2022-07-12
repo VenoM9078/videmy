@@ -6,8 +6,8 @@ if (!defined('BASEPATH'))
  *  @author   : Creativeitem
  *  date    : 07 october, 2018
  *  Academy
- *  http://codecanyon.net/user/Creativeitem
- *  http://support.creativeitem.com
+ *  https://codecanyon.net/user/Creativeitem
+ *  https://support.creativeitem.com
  */
 
      ini_set('max_execution_time', 0);

@@ -599,7 +599,7 @@ $config['allow_any_cors_domain'] = FALSE;
 | Used if $config['check_cors'] is set to TRUE and $config['allow_any_cors_domain']
 | is set to FALSE. Set all the allowable domains within the array
 |
-| e.g. $config['allowed_origins'] = ['http://www.example.com', 'https://spa.example.com']
+| e.g. $config['allowed_origins'] = ['https://www.example.com', 'https://spa.example.com']
 |
 */
 $config['allowed_cors_origins'] = [];

@@ -76,6 +76,11 @@ $route['ebook/buy/(:any)'] = "addons/ebook/buy/$1";
 $route['home/my_ebooks'] = "addons/ebook/my_ebooks";
 //end ebook
 
+// $route['admin/zoom/'] = "zoom/display";
+$route['admin/zoom/dashboard'] =  "oauth/Zoom_meetings";
+    // $this->load->view('frontend/default/zoom/callbacks.php',$code);
+// };
+
 //BLog
 $route['blogs'] = "blog/blogs";
 $route['blogs/(:any)'] = "blog/blogs/$1";

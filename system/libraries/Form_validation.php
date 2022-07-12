@@ -29,8 +29,8 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (https://bcit.ca/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
  * @filesource
@@ -1216,7 +1216,7 @@ class CI_Form_validation {
 			$str = 'ipv6.host'.substr($str, strlen($matches[1]) + 2);
 		}
 
-		return (filter_var('http://'.$str, FILTER_VALIDATE_URL) !== FALSE);
+		return (filter_var('https://'.$str, FILTER_VALIDATE_URL) !== FALSE);
 	}
 
 	// --------------------------------------------------------------------
@@ -1478,7 +1478,7 @@ class CI_Form_validation {
 	 * Valid Base64
 	 *
 	 * Tests a string for characters outside of the Base64 alphabet
-	 * as defined by RFC 2045 http://www.faqs.org/rfcs/rfc2045
+	 * as defined by RFC 2045 https://www.faqs.org/rfcs/rfc2045
 	 *
 	 * @param	string
 	 * @return	bool
@@ -1530,14 +1530,14 @@ class CI_Form_validation {
 	 */
 	public function prep_url($str = '')
 	{
-		if ($str === 'http://' OR $str === '')
+		if ($str === 'https://' OR $str === '')
 		{
 			return '';
 		}
 
-		if (strpos($str, 'http://') !== 0 && strpos($str, 'https://') !== 0)
+		if (strpos($str, 'https://') !== 0 && strpos($str, 'https://') !== 0)
 		{
-			return 'http://'.$str;
+			return 'https://'.$str;
 		}
 
 		return $str;

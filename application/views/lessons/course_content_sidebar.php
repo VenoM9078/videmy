@@ -239,7 +239,7 @@
                     <div class="tab-pane fade" id="certificate" role="tabpanel" aria-labelledby="certificate-tab" style="text-align: center;">
 
                         <div class="circular-progressdiv" id="course_progress_area"  data-percent="<?php echo course_progress($course_id); ?>">
-                            <svg class="circular-progress" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: 180; width: 180;">
+                            <svg class="circular-progress" viewport="0 0 100 100" version="1.1" xmlns="https://www.w3.org/2000/svg" style="height: 180; width: 180;">
                                 <circle r="80" cx="89" cy="89" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0" ></circle>
                                 <circle class="bar" r="80" cx="89" cy="89" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0"></circle>
                             </svg>

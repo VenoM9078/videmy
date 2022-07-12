@@ -689,7 +689,7 @@ INSERT INTO `settings` (`id`, `key`, `value`) VALUES
 (21, 'website_description', 'Study any topic, anytime. explore thousands of courses for the lowest price ever!'),
 (22, 'website_keywords', 'LMS,Learning Management System,Creativeitem,demo,hello,How are you'),
 (23, 'footer_text', ''),
-(24, 'footer_link', 'http://creativeitem.com/'),
+(24, 'footer_link', 'https://creativeitem.com/'),
 (25, 'protocol', 'smtp'),
 (26, 'smtp_host', 'ssl://smtp.gmail.com'),
 (27, 'smtp_port', '465'),

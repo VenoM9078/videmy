@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Help convert between various formats such as XML, JSON, CSV, etc.
  *
  * @author    Phil Sturgeon, Chris Kacerguis, @softwarespot
- * @license   http://www.dbad-license.org/
+ * @license   https://www.dbad-license.org/
  */
 class Format {
 
@@ -296,7 +296,7 @@ class Format {
     }
 
     /**
-     * @link http://www.metashock.de/2014/02/create-csv-file-in-memory-php/
+     * @link https://www.metashock.de/2014/02/create-csv-file-in-memory-php/
      * @param mixed|NULL $data Optional data to pass, so as to override the data passed
      * to the constructor
      * @param string $delimiter The optional delimiter parameter sets the field

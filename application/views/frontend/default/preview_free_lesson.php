@@ -20,7 +20,7 @@
                     <?php if (strtolower($provider) == 'youtube'): ?>
                         <?php $youtube_video_details = $this->video_model->getVideoDetails($video_url); ?>
                         <iframe id="player" type="text/html" height="500"
-                          src="<?php echo str_replace('http://', 'https://', $youtube_video_details['embed_video']); ?>"
+                          src="<?php echo str_replace('https://', 'https://', $youtube_video_details['embed_video']); ?>"
                           frameborder="0"></iframe>
                         <!-- If the video is vimeo video -->
                     <?php elseif (strtolower($provider) == 'vimeo'):

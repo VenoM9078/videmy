@@ -9,7 +9,7 @@
  *
  * As with any software that integrates with the Facebook platform, your use
  * of this software is subject to the Facebook Developer Principles and
- * Policies [http://developers.facebook.com/policy/]. This copyright notice
+ * Policies [https://developers.facebook.com/policy/]. This copyright notice
  * shall be included in all copies or substantial portions of the software.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -30,7 +30,7 @@ namespace Facebook\FileUpload;
  *
  * @see https://github.com/guzzle/guzzle/blob/master/src/Mimetypes.php
  *
- * @link http://svn.apache.org/repos/asf/httpd/httpd/branches/1.3.x/conf/mime.types
+ * @link https://svn.apache.org/repos/asf/httpd/httpd/branches/1.3.x/conf/mime.types
  */
 class Mimetypes
 {

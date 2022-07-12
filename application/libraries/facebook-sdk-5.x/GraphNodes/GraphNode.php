@@ -9,7 +9,7 @@
  *
  * As with any software that integrates with the Facebook platform, your use
  * of this software is subject to the Facebook Developer Principles and
- * Policies [http://developers.facebook.com/policy/]. This copyright notice
+ * Policies [https://developers.facebook.com/policy/]. This copyright notice
  * shall be included in all copies or substantial portions of the software.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -114,15 +114,15 @@ class GraphNode extends Collection
      * @return boolean
      *
      * @see https://developers.facebook.com/docs/graph-api/using-graph-api/#readmodifiers
-     * @see http://www.cl.cam.ac.uk/~mgk25/iso-time.html
-     * @see http://en.wikipedia.org/wiki/ISO_8601
+     * @see https://www.cl.cam.ac.uk/~mgk25/iso-time.html
+     * @see https://en.wikipedia.org/wiki/ISO_8601
      */
     public function isIso8601DateString($string)
     {
         // This insane regex was yoinked from here:
-        // http://www.pelagodesign.com/blog/2009/05/20/iso-8601-date-validation-that-doesnt-suck/
+        // https://www.pelagodesign.com/blog/2009/05/20/iso-8601-date-validation-that-doesnt-suck/
         // ...and I'm all like:
-        // http://thecodinglove.com/post/95378251969/when-code-works-and-i-dont-know-why
+        // https://thecodinglove.com/post/95378251969/when-code-works-and-i-dont-know-why
         $crazyInsaneRegexThatSomehowDetectsIso8601 = '/^([\+-]?\d{4}(?!\d{2}\b))'
             . '((-?)((0[1-9]|1[0-2])(\3([12]\d|0[1-9]|3[01]))?'
             . '|W([0-4]\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\d'

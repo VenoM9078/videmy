@@ -9,7 +9,7 @@
  *
  * As with any software that integrates with the Facebook platform, your use
  * of this software is subject to the Facebook Developer Principles and
- * Policies [http://developers.facebook.com/policy/]. This copyright notice
+ * Policies [https://developers.facebook.com/policy/]. This copyright notice
  * shall be included in all copies or substantial portions of the software.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -33,7 +33,7 @@ interface PseudoRandomStringGeneratorInterface
     /**
      * Get a cryptographically secure pseudo-random string of arbitrary length.
      *
-     * @see http://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers/
+     * @see https://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers/
      *
      * @param int $length The length of the string to return.
      *

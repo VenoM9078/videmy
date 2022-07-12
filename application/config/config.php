@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | URL to your CodeIgniter root. Typically this will be your base URL,
 | WITH a trailing slash:
 |
-|	http://example.com/
+|	https://example.com/
 |
 | WARNING: You MUST set this value!
 |
@@ -23,9 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-
-$config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
-$config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
+$config["ngrok"] = "https://0099-42-201-156-136.ap.ngrok.io";
+// $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+// $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
+$config['base_url'] = $config["ngrok"];//://27a1-42-201-156-136.ap.ngrok.io";
+// $config['base_url'] .= "://84b0-42-201-156-136.ap.ngrok.io";
 $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 
 /*
@@ -89,7 +91,7 @@ $config['language']	= 'english';
 | This determines which character set is used by default in various methods
 | that require a character set to be provided.
 |
-| See http://php.net/htmlspecialchars for a list of supported charsets.
+| See https://php.net/htmlspecialchars for a list of supported charsets.
 |
 */
 $config['charset'] = 'UTF-8';
@@ -118,7 +120,8 @@ $config['enable_hooks'] = FALSE;
 |
 */
 $config['subclass_prefix'] = 'REST_';
-
+$config['composer_autoload'] = FCPATH.'vendor/autoload.php';
+// $config['composer_autoload'] = TRUE;
 /*
 |--------------------------------------------------------------------------
 | Composer auto-loading
@@ -127,19 +130,17 @@ $config['subclass_prefix'] = 'REST_';
 | Enabling this setting will tell CodeIgniter to look for a Composer
 | package auto-loader script in application/vendor/autoload.php.
 |
-|	$config['composer_autoload'] = TRUE;
 |
 | Or if you have your vendor/ directory located somewhere else, you
 | can opt to set a specific path as well:
 |
 |	$config['composer_autoload'] = '/path/to/vendor/autoload.php';
 |
-| For more information about Composer, please visit http://getcomposer.org/
+| For more information about Composer, please visit https://getcomposer.org/
 |
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = FALSE;
 
 /*
 |--------------------------------------------------------------------------

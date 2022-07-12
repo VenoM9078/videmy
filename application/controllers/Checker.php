@@ -6,8 +6,8 @@ if (!defined('BASEPATH'))
  *  date        : 14 september, 2017
  *  Specification    :    Mobile app response, JSON formatted data for iOS & android app
  *  Ekattor School Management System Pro
- *  http://codecanyon.net/user/Creativeitem
- *  http://support.creativeitem.com
+ *  https://codecanyon.net/user/Creativeitem
+ *  https://support.creativeitem.com
  */
 class Mobile extends CI_Controller
 {

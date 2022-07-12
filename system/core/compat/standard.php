@@ -29,8 +29,8 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (https://bcit.ca/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 3.0.0
  * @filesource
@@ -61,7 +61,7 @@ if ( ! function_exists('array_column'))
 	/**
 	 * array_column()
 	 *
-	 * @link	http://php.net/array_column
+	 * @link	https://php.net/array_column
 	 * @param	array	$array
 	 * @param	mixed	$column_key
 	 * @param	mixed	$index_key
@@ -147,7 +147,7 @@ if ( ! function_exists('hex2bin'))
 	/**
 	 * hex2bin()
 	 *
-	 * @link	http://php.net/hex2bin
+	 * @link	https://php.net/hex2bin
 	 * @param	string	$data
 	 * @return	string
 	 */

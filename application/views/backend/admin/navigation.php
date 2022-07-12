@@ -25,6 +25,12 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 			</a>
 		</li>
 
+		<li class="side-nav-item <?php if ($page_name == 'dashboard') echo 'active'; ?>">
+			<a href="<?php echo site_url('admin/zoom/dashboard'); ?>" class="side-nav-link">
+				<i class="dripicons-view-apps"></i>
+				<span><?php echo "Zoom Dashboard"; ?></span>
+			</a>
+		</li>
 		<?php if (has_permission('course')) : ?>
 			<li class="side-nav-item <?php if ($page_name == 'courses' || $page_name == 'course_add' || $page_name == 'course_edit' || $page_name == 'categories' || $page_name == 'category_add' || $page_name == 'category_edit' || $page_name == 'coupons' || $page_name == 'coupon_add' || $page_name == 'coupon_edit' || $page_name == 'add_bundle' || $page_name == 'manage_course_bundle' || $page_name == 'edit_bundle' || $page_name == 'active_bundle_subscription_report' || $page_name == 'expire_bundle_subscription_report' || $page_name == 'bundle_invoice') echo 'active'; ?>">
 				<a href="javascript: void(0);" class="side-nav-link <?php if ($page_name == 'courses' || $page_name == 'course_add' || $page_name == 'course_edit' || $page_name == 'categories' || $page_name == 'category_add' || $page_name == 'category_edit' || $page_name == 'coupons' || $page_name == 'coupon_add' || $page_name == 'coupon_edit') : ?> active <?php endif; ?>">
